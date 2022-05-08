@@ -56,6 +56,8 @@ header nav a:hover {
 
 /* elementos do filme principal */
 
+
+
 .main-movie {
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%), url('https://www.portallos.com.br/wp-content/uploads/2013/04/gijoe-retaliation-international-russian-banner-raw-image.jpeg');
@@ -113,7 +115,9 @@ header nav a:hover {
 }
 
 .carousel-movie {
-    margin-top: 5px;
+    justify-content: center;
+    margin: 50px;
+    /* width: 90%; */
 }
 
 /* início da estilização do footer */
