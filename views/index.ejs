@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- linkando os arquivos Owl Carousel 2 css -->
+    <link rel="stylesheet" href="/css/carousel-owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/carousel-owl/owl.theme.default.min.css">
+    
+    <title>DB FLIX</title>
+</head>
+<body>
+       <%- include('./partials/header.ejs') %>
+
+    <!-- dados referente ao filme principal mostrado na página -->
+    <!-- dados referente ao filme principal mostrado na página -->
+    <main>
+        <div class="main-movie">
+            <div class="container">
+                <h3 class="title-movie">TRAILERS DB</h3>
+                <p class="description">Site criado como meio de avaliação do curso de Full Stack da Blue Edtech.</p>
+                <!-- <div class="buttons">
+                    <button role="button" class="button">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="button">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button> -->
+                </div>
+            </div>
+        </div>  
+        
+        <div class="carousel-movie">
+            <div class="owl-carousel owl-theme" id="cardFilme">
+                <% listFilmes.forEach(element => { %>
+                <div class="item">
+                        <a href="/detalhes/<%= element.id %> ">
+                    <img class="box-movie" src="<%= element.img %>" alt="" srcset="">
+                </a>
+                <div class="btn__container" id="btnCardFilme">
+                    <a href="/deletar/<%= element.id %> "> Remover   <i class="fa-solid fa-trash"></i> </a>
+                    <a href="/editar/<%= element.id %> "> Editar   <i class="fa-solid fa-pencil"></i> </a>
+                </div>
+                </div>
+                <% }) %>
+            </div>        
+        </div>
+
+    </main>
+
+    <!-- linkando os arquivos Owl Carousel 2 js -->
+    <script src="/js/carousel-owl/jquery.min.js"></script>
+    <script src="/js/carousel-owl/owl.carousel.min.js"></script>
+    <script src="/js/carousel-owl/setup.js"></script>
+
+    <%- include('./partials/footer.ejs') %>
+    
+</body>
+</html>

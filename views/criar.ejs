@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Criar</title>
+  </head>
+
+  <body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+      <section id="form__container">
+        <form method="post" action="/criar">
+          <fieldset>
+            <legend>Criar Filme</legend>
+            <fieldset class="fieldset__data">
+              <input type="text" name="nome" required />
+              <label for="nome"> Nome Filme </label>
+            </fieldset>
+
+            <fieldset class="fieldset__data">
+              <input type="text" name="diretor" required />
+              <label for="diretor"> Nome Diretor </label>
+            </fieldset>
+
+            <fieldset class="fieldset__data">
+              <input type="url" name="img" required />
+              <label for="img"> Imagem </label>
+            </fieldset>
+
+            <fieldset class="fieldset__data">
+              <input type="number" name="duracao" required />
+              <label for="duracao"> Duração </label>
+            </fieldset>
+
+            <fieldset class="fieldset__data">
+              <input type="text" name="ano" required />
+              <label for="ano"> Ano de Lançamento </label>
+            </fieldset>
+
+            <fieldset class="fieldset__data">
+              <input type="text" name="iframe" required />
+              <label for="iframe"> Código do video </label>
+            </fieldset>
+            <div id="btn__container">
+              <button id="btn__submit" type="submit">Enviar</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

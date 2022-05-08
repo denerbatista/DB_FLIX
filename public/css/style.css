@@ -1,0 +1,316 @@
+:root {
+    --color-background: #141414;
+    --color-text-primary: #FFFFFF;
+    --color-text-title: #E50914;
+    --color-text-main: #AAA;
+    --color-background-button: #FFFFFF;
+    --color-text-button: #141414;
+}
+
+/* resetando alguns estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* elementos base */
+body {
+    background: var(--color-background);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text-primary);
+    width: 100vw;
+    height: 100vh;
+}
+header{
+width: 100vw;
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: row; /* coloca o menu ao lado da logo */
+    align-items: center; /* alinhando o menu ao centro do container */
+    justify-content: space-between; /* adicionando um espaço entre o menu e a logo */ 
+}
+
+.logo {
+    max-width: 168px; /* tamanho da logo na tela */
+    margin-left: 5px; /* espaçamento entre o lado esquerdo da tela e a logo */
+}
+
+header nav a {
+    text-decoration: none; /* removendo o sublinhado do link dos menus */
+    margin-right: 30px; /*espaçamento entre o menu e o lado direito da tela e ente eles*/
+    color: var(--color-text-main);
+}
+
+header nav a:hover {
+    color: var(--color-text-primary);
+}
+
+/* elementos do filme principal */
+
+.main-movie {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%), url('https://www.portallos.com.br/wp-content/uploads/2013/04/gijoe-retaliation-international-russian-banner-raw-image.jpeg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.main-movie .title-movie {
+    margin-top: 15%;
+    font-size: 40px;
+}
+
+.main-movie .container {
+    width: 70%;
+}
+
+.button {
+    background-color: rgba(0,0,0,0.50);
+    border: none;
+    color: var(--color-text-primary);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.button:hover {
+    background-color: var(--color-background-button);
+    color: var(--color-text-button);
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carousel-movie {
+    margin-top: 5px;
+}
+
+/* início da estilização do footer */
+.baseboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;    
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.baseboard a {
+    color: var(--color-text-primary);
+}
+/* fim da estilização do footer */
+
+#cardFilme{
+    display: flex;
+    flex-direction: column;
+}
+
+#btnCardFilme{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.item{
+    transition: all 0.5s ease-in-out;
+}
+
+.item:hover{
+    transform: scale3d(1.1)
+}
+/* responsivo */
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .description {
+        width: 50%;
+    }
+}
+
+/* style detalhes */
+
+main div#sub__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #272727;
+}
+
+section#card__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 16px;
+    gap: 16px;
+}
+
+section#details_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 16px;
+    gap: 16px;
+}
+
+section article.cards {
+    height: 400px;
+    width: 350px;
+    border: 3px solid red
+}
+
+article.cards div.card_img {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    border-bottom: 3px solid red
+}
+
+article.cards div.card_img img {
+    height: 100%;
+}
+
+article.cards div.card_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+
+/* tabela criar */
+
+
+
+table {
+    width: 500px;
+    text-align: center;
+}
+
+table tr:nth-child(odd) {
+    background-color: #930013;
+}
+
+table th {
+    background-color: #da062e;
+}
+
+div.btn__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section#form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+}
+
+section#form__container form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+form fieldset {
+    padding: 20px;
+}
+
+fieldset legend {
+    background-color: #930013;
+}
+
+fieldset.fieldset__data{
+    border: none;
+}
+
+form div#btn__container {
+    display: flex;
+    justify-content: center;
+}
+
+form button#btn__submit {
+    background-color: #da062e;
+    color: #fff;
+    height: 40px;
+    width: 60px;
+}
+
+/* style mensage confirmation */
+
+section#message {
+    padding: 1.5rem;
+    background-color: rgb(234, 51, 51);
+    color: #4d0000;
+    position: fixed;
+    /* top: 3rem; */
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }

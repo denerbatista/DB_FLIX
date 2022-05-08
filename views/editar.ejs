@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title> Editar </title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section id="form__container">
+            <form method="post" action="/editar/<%= filmeAtual.id %> ">
+                <fieldset>
+                    <legend> Editando o <%= filmeAtual.nome %>  </legend>
+                    <fieldset class="fieldset__data">
+                        <input type="text" name="nome"  value="<%= filmeAtual.nome %>" required>
+                        <label for="nome"> Nome Filme </label>
+                    </fieldset>
+
+                    <fieldset class="fieldset__data">
+                        <input type="text" name="diretor"  value="<%= filmeAtual.diretor %>" required>
+                        <label for="diretor"> Nome Diretor </label>
+                    </fieldset>
+
+                    <fieldset class="fieldset__data">
+                        <input type="url" name="img"  value="<%= filmeAtual.img %>" required>
+                        <label for="img"> Imagem </label>
+                    </fieldset>
+
+                    <fieldset class="fieldset__data">
+                        <input type="number" name="duracao"  value="<%= filmeAtual.duracao %>" required>
+                        <label for="duracao"> Duração </label>
+                    </fieldset>
+
+                    <fieldset class="fieldset__data">
+                        <input type="text" name="ano"  value="<%= filmeAtual.ano %>" required>
+                        <label for="ano"> Ano de Lançamento </label>
+                    </fieldset>
+
+                    <fieldset class="fieldset__data">
+                        <input type="text" name="iframe" value="<%= filmeAtual.iframe %>" required>
+                        <label for="iframe"> Código do video </label>
+                    </fieldset>
+                    <div id="btn__container">
+                        <button id="btn__submit" type="submit"> Enviar </button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</body>
+</html>
