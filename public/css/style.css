@@ -99,6 +99,11 @@ header nav a:hover {
     color: var(--color-text-button);
 }
 
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .button i {
     margin-right: 8px;
 }
@@ -148,13 +153,7 @@ header nav a:hover {
     justify-content: space-evenly;
 }
 
-.item{
-    transition: all 0.5s ease-in-out;
-}
 
-.item:hover{
-    transform: scale3d(1.1)
-}
 /* responsivo */
 @media screen and (max-width: 700px) {
     header .container {
