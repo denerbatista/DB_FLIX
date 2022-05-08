@@ -48,6 +48,7 @@ export const getDeletar = async (req, res) => {
                 id: req.params.id
             }
         })
+        message='Filme Removido com Sucesso!'
         res.redirect('/')
     }
     catch(error){
@@ -66,7 +67,7 @@ export const postCriar = async (req, res) => {
         // await connection.query(`INSERT INTO filmes (nome, diretor, img, duracao, ano, iframe) VALUES('${nome}', '${diretor}', '${img}', ${duracao}, '${ano}', '${iframe}')`) 
         if(!nome || !diretor || !img || !duracao || !ano || !iframe){
             message='Error todos os campos devem ser preenchidos!'
-            res.redirect('/')
+            res.redirect('/criar')
         } else {
             await filmes.create({nome, diretor, img, duracao, ano, iframe})
             message='Filme Adicionado com Sucesso!'
