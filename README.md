@@ -44,6 +44,6 @@ Você pode visualizar o layout do projeto através desse link: https://db-flix.o
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/denerbatista/Pokedex/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/denerbatista/DB_FLIX/blob/main/LICENSE) para mais detalhes.
 
 Feito com ❤️ por Dener Batista 👋🏽 [Entre em contato!](https://www.linkedin.com/in/dener-gomes-batista-83894168/)
