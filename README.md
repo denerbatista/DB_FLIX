@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <img alt="dev.pokédex" src="https://cdn.discordapp.com/attachments/947324026236330018/968108072843218954/unknown.png" width="100%">
+  <img alt="dev.DB_FLIX" src="https://cdn.discordapp.com/attachments/947324026236330018/973356738524905492/zyro-image.png" wimage.pngidth="100%">
 </p>
 
 ## 🚀 Tecnologias
