@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <img alt="dev.DB_FLIX" src="https://cdn.discordapp.com/attachments/950935885619265567/973388036647829504/zyro-imagemm.png" wimage.pngidth="100%">
+  <img alt="dev.DB_FLIX" src="https://cdn.discordapp.com/attachments/950935885619265567/973389297489178704/zyro-imagemm.png" wimage.pngidth="100%">
 </p>
 
 ## 🚀 Tecnologias
