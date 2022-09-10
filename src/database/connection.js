@@ -13,7 +13,7 @@ export const connection = new Sequelize(
     //         dialect: 'postgres' //Qual banco de dados o Sequelize está trabalhando
     //     }
     // )
-    'postgres://locadora_user:NLkmHLfnZIWcHMUXIxsmXcRvWJ1R18Q8@dpg-c9rghhr0tnuoark2f2e0-a.oregon-postgres.render.com/locadora',
+    process.env.DATABASE_URL,
     {
         dialect: 'postgres',
         dialectOptions: {
